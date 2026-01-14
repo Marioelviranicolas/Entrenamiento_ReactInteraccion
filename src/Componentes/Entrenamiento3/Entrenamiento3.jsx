@@ -6,9 +6,9 @@ export const Entrenamiento3 = () => {
   const [correo, setCorreo] = useState("");
   const [password, setpassword] = useState("");
 
-  // Función que se ejecuta al enviar el formulario
+  
   const envioForm = (e) => {
-    e.preventDefault(); // Evita que se recargue la página
+    e.preventDefault(); 
 
     // Validación sencilla del correo
     if (!correo.includes("@")) {
@@ -25,7 +25,7 @@ export const Entrenamiento3 = () => {
 
     console.log("Datos del formulario:", datos);
 
-    // Limpiar campos después de enviar (opcional)
+    // Limpiar campos 
     setNombre("");
     setCorreo("");
     setpassword("");

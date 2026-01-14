@@ -23,7 +23,7 @@ export const Entrenamiento5 = () => {
     <div>
       <h2>Lista de Productos</h2>
 
-      {/* Filtro por texto */}
+      
       <input
         type="text"
         placeholder="Buscar producto..."

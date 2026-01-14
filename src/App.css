@@ -1,42 +1,78 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+/* Fondo general oscuro ocupando toda la pantalla */
+
+
+*{
+background-color: #1c1c1c;
+}
+
+
+.app-container {
+  width: 95vw;
+  height: 95vh;
   padding: 2rem;
+  background-color: #1c1c1c;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Título principal */
+.app-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Subtítulos de sección */
+.app-container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Contenedor de botones */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 1400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Botones oscuros simples */
+.button-group button {
+  flex: 1 0 120px; /* crecen pero no más de 120px mínimo */
+  padding: 0.6rem 1rem;
+  background-color: #382828;
+  border: none;
+  border-radius: 6px;
+  color: #eee;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-align: center;
 }
 
-.card {
-  padding: 2em;
+.button-group button:hover {
+  background-color: #444;
 }
 
-.read-the-docs {
-  color: #888;
+/* Contenedor de entrenamiento ocupa todo el espacio restante */
+.entrenamiento-container {
+  flex: 1; /* ocupa todo el espacio vertical restante */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-y: auto; /* si el componente es grande, aparece scroll */
 }
